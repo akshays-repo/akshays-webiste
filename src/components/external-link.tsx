@@ -12,15 +12,18 @@ export const ExternalLink: React.FC<Props> = ({
   children,
   ...otherProps
 }) => {
-  return (
-    <a
-      className={className ?? undefined}
-      target="_blank"
-      rel="noopener noreferrer"
-      href={href}
-      {...otherProps}
-    >
-      {children}
-    </a>
-  );
+  if (href)
+    return (
+      <a
+        className={className ?? undefined}
+        target="_blank"
+        rel="noopener noreferrer"
+        href={href}
+        {...otherProps}
+      >
+        {children}
+      </a>
+    );
+
+  return <> {children}</>;
 };

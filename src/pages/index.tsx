@@ -26,6 +26,7 @@ import { Button } from "../components/button";
 
 import { compareDesc } from "date-fns";
 import { DevToBlog } from "src/@types/blog";
+import { Tech } from "src/data/techstack";
 
 const latestPostsLimit = 5;
 
@@ -160,7 +161,9 @@ const Index = ({ latestPosts }: Props) => {
                     <Item.Title>
                       <span className="inline-flex items-center">
                         {project.title}{" "}
-                        <ExternalLinkIcon className="ml-1 inline h-5 w-5" />
+                        {project.link && (
+                          <ExternalLinkIcon className="ml-1 inline h-5 w-5" />
+                        )}
                       </span>
                       <div className="my-2 hidden space-x-2 font-mono sm:my-0 sm:ml-auto sm:flex">
                         {project.techStack.map((tech) => {
@@ -176,16 +179,16 @@ const Index = ({ latestPosts }: Props) => {
           </Section.Content>
         </Section>
         <Section>
-          <Section.Title as="h2">Visited places</Section.Title>
+          <Section.Title as="h2">Tech Stack</Section.Title>
           <Section.Content>
             <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
-              {Travel.map((dest) => {
+              {Tech.map((tech) => {
                 return (
                   <PhotoCard
-                    key={dest.title}
-                    img={dest.img}
-                    title={dest.title}
-                    subTitle={dest.placesVisited}
+                    key={tech.title}
+                    img={tech.img}
+                    title={tech.title}
+                    subTitle={tech.level}
                   />
                 );
               })}

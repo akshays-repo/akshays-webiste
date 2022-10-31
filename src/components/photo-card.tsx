@@ -15,10 +15,9 @@ export const PhotoCard: React.FC<Props> = ({
 }) => {
   return (
     <div className="overflow-hidden" {...otherProps}>
-      <div className="h-28 w-full relative">
+      <div className="w-32 h-32">
         <Image placeholder="blur" src={img} alt={title} />
       </div>
-
       <div className="py-2">
         <h3 className="font-bold text-sm leading-none mb-2">{title}</h3>
         <p className="text-xs">{subTitle}</p>
