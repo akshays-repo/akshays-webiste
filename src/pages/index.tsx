@@ -114,7 +114,7 @@ const Index = ({ latestPosts }: Props) => {
           <Section.Content>
             {latestPosts.map((post) => {
               return (
-                <Link key={post.id} href={`/blog/}`}>
+                <a key={post.id} href={post.url}>
                   <Item>
                     <Item.Title>{post.title}</Item.Title>
                     <Item.Subtitle>{post.description}</Item.Subtitle>
@@ -141,7 +141,7 @@ const Index = ({ latestPosts }: Props) => {
                       </div>
                     </Item.Description>
                   </Item>
-                </Link>
+                </a>
               );
             })}
           </Section.Content>
