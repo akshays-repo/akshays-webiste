@@ -49,10 +49,11 @@ const AboutMe = () => {
           <Section.Title as="h2">Work</Section.Title>
           <Section.Content>
             <div className="prose dark:prose-dark">
-              I'm a software developer with over 2 years of experience. I
-              started as a javascript developer, now I'm working on ReactJs and
-              Flutter I created multiple Android and Web applications from
-              scratch for companies. If you&apos;d like to work with me just{" "}
+              I`&apos;`m a software developer with over 2 years of experience. I
+              started as a javascript developer, now I`&apos;`m working on
+              ReactJs and Flutter I created multiple Android and Web
+              applications from scratch for companies. If you&apos;d like to
+              work with me just{" "}
               <ExternalLink href="mailto:bartosz.jarocki@icloud.com">
                 email me.
               </ExternalLink>
