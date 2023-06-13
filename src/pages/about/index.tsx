@@ -20,6 +20,23 @@ import { ExternalLink } from "../../components/external-link";
 import { Section } from "../../components/section";
 import { Quote } from "../../components/quote";
 
+const getTotalExperiance = () => {
+  const startYear = 2020; // Replace with the year you started
+  const startMonth = 12; // Replace with the month you started (January = 1, February = 2, etc.)
+  const currentDate = new Date();
+  const currentYear = currentDate.getFullYear();
+  const currentMonth = currentDate.getMonth() + 1; // Adding 1 to get the correct month
+
+  let yearsOfExperience = currentYear - startYear;
+  let monthsOfExperience = currentMonth - startMonth;
+
+  if (monthsOfExperience < 0) {
+    yearsOfExperience--;
+    monthsOfExperience = 12 - Math.abs(monthsOfExperience);
+  }
+  return `${yearsOfExperience}.${monthsOfExperience}`
+}
+
 const AboutMe = () => {
   return (
     <Layout>
@@ -49,12 +66,12 @@ const AboutMe = () => {
           <Section.Title as="h2">Work</Section.Title>
           <Section.Content>
             <div className="prose dark:prose-dark">
-              I`&apos;`m a software developer with over 2 years of experience. I
-              started as a javascript developer, now I`&apos;`m working on
+              I&apos;m a software developer with over {getTotalExperiance()} years of experience. I
+              started as a javascript developer, now I&apos;m working on
               ReactJs and Flutter I created multiple Android and Web
               applications from scratch for companies. If you&apos;d like to
               work with me just{" "}
-              <ExternalLink href="mailto:bartosz.jarocki@icloud.com">
+              <ExternalLink href="mailto:akshayshan28@.com">
                 email me.
               </ExternalLink>
             </div>
