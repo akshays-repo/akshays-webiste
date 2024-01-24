@@ -1,5 +1,12 @@
 export const Projects = [
   {
+    title: "OneMap - ESG Solutions",
+    techStack: ["React","Three JS"],
+    description:
+      "Fully integrated seismic data visualizer and analysis portal.",
+    link: "https://onemap.esgsolutions.com/",
+  },
+  {
     title: "WeStock Farmer and Vertinary Application",
     techStack: ["TypeScript", "React"],
     description:

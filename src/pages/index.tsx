@@ -71,8 +71,8 @@ const Index = ({ latestPosts }: Props) => {
             <PageTitle>Akshay S</PageTitle>
             <h2 className="mt-1 text-lg font-semibold leading-tight tracking-tight">
               Frontend developer at{" "}
-              <ExternalLink href="https://www.brainwired.in/">
-                Brainwired
+              <ExternalLink href="https://www.optisolbusiness.com/">
+                OptiSol Business Solutions
               </ExternalLink>
             </h2>
             <p className="mt-4 text-base">

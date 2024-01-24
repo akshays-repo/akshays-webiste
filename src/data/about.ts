@@ -20,7 +20,7 @@ export const AboutMeSiteDescription =
 export const AboutMeSiteUrl = `${process.env.NEXT_PUBLIC_SITE_URL}/about`;
 
 export const AboutMeContent = `
-Hey! I'm 😊 Akshay S and I live in Kerala, India 🇮🇳 . I grew up in a small village palakkad. I went for bachelor's degree in computer science and engineering. I like Psychology, books, movies and programming. Also, I’m fascinated by the people and I find great pleasure in travelling. I'm a less balanced and constant person in rorschach test 
+Hey! I'm 😊 Akshay S and I live in Kerala, India 🇮🇳 . I grew up in a small village palakkad. I went for bachelor's degree in computer science and engineering. I like Psychology, books, movies and programming. Also, I’m fascinated by the people and I find great pleasure in traveling. I'm a less balanced and constant person in rorschach test 
 `;
 
 export const CompaniesLinks = [
