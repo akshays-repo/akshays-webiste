@@ -26,7 +26,7 @@ const Title: React.FC<TitleProps> = ({
 
 const Content: React.FC<PropsWithChildren> = ({ children }) => {
   return (
-    <div className="mt-4 divide-y divide-zinc-200 dark:divide-zinc-700">
+    <div className="mt-4">
       {children}
     </div>
   );
